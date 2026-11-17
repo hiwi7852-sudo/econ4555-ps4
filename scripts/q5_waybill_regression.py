@@ -29,7 +29,7 @@ FIELDS = {
 TERMS = ["Interchange", "ln(Dist)", "ln(Tons)"]
 
 
-def read_waybills(archive_path):
+def read_waybills(archive_path, extra_fields=None, extra_text_fields=()):
     with ZipFile(archive_path) as archive, TemporaryDirectory() as scratch:
         path = Path(scratch) / DATA_MEMBER
         with archive.open(DATA_MEMBER) as source, path.open("wb") as target:
@@ -42,10 +42,10 @@ def read_waybills(archive_path):
                 and np.all(bytes_by_position[:, 248] == b"\n")):
             raise ValueError("Record delimiters do not match the 2024 release.")
         columns = {}
-        for name, (start, end) in FIELDS.items():
+        for name, (start, end) in (FIELDS | (extra_fields or {})).items():
             field = np.ascontiguousarray(bytes_by_position[:, start - 1:end])
             value = pd.Series(field.view(f"S{end - start + 1}").ravel())
-            if name in {"period", "stcc", "routing"}:
+            if name in {"period", "stcc", "routing"} or name in extra_text_fields:
                 columns[name] = value.str.decode("ascii").str.strip()
             else:
                 columns[name] = pd.to_numeric(value, errors="coerce")
@@ -84,13 +84,24 @@ def clean_samples(data):
     )
 
 
-def estimate(data, name, *, tons_column="billed_tons", stcc_digits=5, weighted=False):
+def estimate(data, name, *, tons_column="billed_tons", stcc_digits=5, weighted=False, routing_categories=None):
     group, labels = pd.factorize(data.stcc.str.slice(stop=stcc_digits))
     interline = data.interchanges.gt(0).to_numpy()
     log_distance = np.log(data.distance.to_numpy())
     log_tons = np.log(data[tons_column].to_numpy())
     y = np.log(data.revenue.to_numpy()) - log_distance - log_tons
-    x = np.column_stack((interline, log_distance, log_tons))
+    if routing_categories is None:
+        terms = TERMS
+        x = np.column_stack((interline, log_distance, log_tons))
+        comparison_count = 1
+    else:
+        categories = sorted(routing_categories.unique())
+        if not categories or categories[0] != 1:
+            raise ValueError("The routing regression requires one routing as a reference.")
+        comparison_count = len(categories) - 1
+        terms = [f"Routings: {k if k < 5 else '5+'}" for k in categories[1:]] + TERMS[1:]
+        x = np.column_stack([routing_categories.eq(k) for k in categories[1:]]
+                            + [log_distance, log_tons])
     weights = data.exact_factor.to_numpy() if weighted else np.ones(len(data))
     group_weight = np.bincount(group, weights)
     # Project out the intercept and commodity dummies by within-STCC demeaning.
@@ -102,8 +113,8 @@ def estimate(data, name, *, tons_column="billed_tons", stcc_digits=5, weighted=F
     within_y = demean(y)
     model = sm.WLS(within_y, within_x, weights=weights) if weighted else sm.OLS(within_y, within_x)
     fit = model.fit(method="qr")
-    df = len(y) - len(labels) - len(TERMS)
-    if fit.model.rank != len(TERMS) or df <= 0:
+    df = len(y) - len(labels) - len(terms)
+    if fit.model.rank != len(terms) or df <= 0:
         raise ValueError(f"{name}: the full fixed-effects model must have full rank.")
 
     # Conventional covariance uses the residual df of the full dummy regression.
@@ -128,14 +139,14 @@ def estimate(data, name, *, tons_column="billed_tons", stcc_digits=5, weighted=F
 
     output = []
     critical = t.ppf(0.975, df)
-    for i, term in enumerate(TERMS):
+    for i, term in enumerate(terms):
         beta = fit.params[i]
         row = {
             "Model": name, "Term": term, "Estimate": beta, "Observations": len(y),
             "Interchange observations": int(interline.sum()), "STCC groups": len(labels),
             "STCC groups with both statuses": mixed, "Singleton groups": int(singleton.sum()),
             "Residual df": df, "R-squared": r_squared,
-            "Percent difference": 100 * np.expm1(beta) if i == 0 else np.nan,
+            "Percent difference": 100 * np.expm1(beta) if i < comparison_count else np.nan,
         }
         for label, cov in [("Conventional", conventional), ("HC3", robust)]:
             se = np.sqrt(cov[i, i])
@@ -143,7 +154,7 @@ def estimate(data, name, *, tons_column="billed_tons", stcc_digits=5, weighted=F
             row[f"{label} p-value"] = 2 * t.sf(abs(beta / se), df)
             row[f"{label} CI lower"] = beta - critical * se
             row[f"{label} CI upper"] = beta + critical * se
-            if i == 0:
+            if i < comparison_count:
                 row[f"{label} percent CI lower"] = 100 * np.expm1(beta - critical * se)
                 row[f"{label} percent CI upper"] = 100 * np.expm1(beta + critical * se)
         output.append(row)

@@ -1,0 +1,5 @@
+Affected scenario,Q5 estimate,Sample records,Expanded waybills,Expanded ton-miles,Expanded interline revenue,Avoided payment fraction,Potential payment savings
+Conservative,Baseline: Rebill Code 0,39,195,16215950,3578800,0.2201660714,787930.3363
+Conservative,All otherwise valid records,39,195,16215950,3578800,0.1330119715,476023.2434
+Broader,Baseline: Rebill Code 0,12266,181497.56,9778618716,949826909.2,0.2201660714,209119659.1
+Broader,All otherwise valid records,12266,181497.56,9778618716,949826909.2,0.1330119715,126338349.7

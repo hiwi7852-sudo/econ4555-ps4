@@ -1,0 +1,481 @@
+Carrier,BEA,Snap miles,Accepted,Network nodes,Largest component nodes,Undirected links,Scenario
+BNSF,10,707.4167889,False,35667,35431,40626,Baseline
+BNSF,12,660.0704762,False,35667,35431,40626,Baseline
+BNSF,13,590.4740145,False,35667,35431,40626,Baseline
+BNSF,20,631.3235577,False,35667,35431,40626,Baseline
+BNSF,23,356.5085932,False,35667,35431,40626,Baseline
+BNSF,28,344.6391836,False,35667,35431,40626,Baseline
+BNSF,29,373.8513545,False,35667,35431,40626,Baseline
+BNSF,40,137.9183281,False,35667,35431,40626,Baseline
+BNSF,43,133.1141368,False,35667,35431,40626,Baseline
+BNSF,49,247.366713,False,35667,35431,40626,Baseline
+BNSF,51,274.4449078,False,35667,35431,40626,Baseline
+BNSF,53,406.9835518,False,35667,35431,40626,Baseline
+BNSF,55,306.1574419,False,35667,35431,40626,Baseline
+BNSF,57,236.1866024,False,35667,35431,40626,Baseline
+BNSF,64,0.9001433723,True,35667,35431,40626,Baseline
+BNSF,67,152.2428758,False,35667,35431,40626,Baseline
+BNSF,70,176.1979479,False,35667,35431,40626,Baseline
+BNSF,73,1.686845451,True,35667,35431,40626,Baseline
+BNSF,78,1.62241164,True,35667,35431,40626,Baseline
+BNSF,83,6.348477318,True,35667,35431,40626,Baseline
+BNSF,88,42.43861193,False,35667,35431,40626,Baseline
+BNSF,90,23.59617555,True,35667,35431,40626,Baseline
+BNSF,96,1.813465674,True,35667,35431,40626,Baseline
+BNSF,99,0.8125272799,True,35667,35431,40626,Baseline
+BNSF,107,0.4093646911,True,35667,35431,40626,Baseline
+BNSF,109,0.8846533834,True,35667,35431,40626,Baseline
+BNSF,118,0.7301314827,True,35667,35431,40626,Baseline
+BNSF,127,1.887520217,True,35667,35431,40626,Baseline
+BNSF,131,4.123841453,True,35667,35431,40626,Baseline
+BNSF,134,9.81013004,True,35667,35431,40626,Baseline
+BNSF,141,1.106259736,True,35667,35431,40626,Baseline
+BNSF,144,0.1815702147,True,35667,35431,40626,Baseline
+BNSF,152,260.7401066,False,35667,35431,40626,Baseline
+BNSF,158,0.85832782,True,35667,35431,40626,Baseline
+BNSF,160,0.5661113045,True,35667,35431,40626,Baseline
+BNSF,162,0.4296999559,True,35667,35431,40626,Baseline
+BNSF,163,10.12041059,True,35667,35431,40626,Baseline
+BNSF,164,41.76875712,False,35667,35431,40626,Baseline
+BNSF,167,0.6000619558,True,35667,35431,40626,Baseline
+BNSF,170,0.653187715,True,35667,35431,40626,Baseline
+CN,10,294.326447,False,10445,9671,11673,Baseline
+CN,12,244.9347808,False,10445,9671,11673,Baseline
+CN,13,182.0218434,False,10445,9671,11673,Baseline
+CN,20,314.937631,False,10445,9671,11673,Baseline
+CN,23,370.069512,False,10445,9671,11673,Baseline
+CN,28,419.4930836,False,10445,9671,11673,Baseline
+CN,29,380.8377478,False,10445,9671,11673,Baseline
+CN,40,298.3272299,False,10445,9671,11673,Baseline
+CN,43,222.5402162,False,10445,9671,11673,Baseline
+CN,49,187.1749212,False,10445,9671,11673,Baseline
+CN,51,122.5400305,False,10445,9671,11673,Baseline
+CN,53,11.17672085,True,10445,9671,11673,Baseline
+CN,55,66.24547757,False,10445,9671,11673,Baseline
+CN,57,0.8541743209,True,10445,9671,11673,Baseline
+CN,64,1.340958478,True,10445,9671,11673,Baseline
+CN,67,109.179631,False,10445,9671,11673,Baseline
+CN,70,139.8943339,False,10445,9671,11673,Baseline
+CN,73,0.5609071804,True,10445,9671,11673,Baseline
+CN,78,192.5977942,False,10445,9671,11673,Baseline
+CN,83,4.193154118,True,10445,9671,11673,Baseline
+CN,88,190.0170907,False,10445,9671,11673,Baseline
+CN,90,115.4374625,False,10445,9671,11673,Baseline
+CN,96,1.940640818,True,10445,9671,11673,Baseline
+CN,99,164.6068969,False,10445,9671,11673,Baseline
+CN,107,20.78735726,True,10445,9671,11673,Baseline
+CN,109,2.723201226,True,10445,9671,11673,Baseline
+CN,118,1.303927639,True,10445,9671,11673,Baseline
+CN,127,359.4592568,False,10445,9671,11673,Baseline
+CN,131,254.220758,False,10445,9671,11673,Baseline
+CN,134,442.5707316,False,10445,9671,11673,Baseline
+CN,141,484.4648051,False,10445,9671,11673,Baseline
+CN,144,640.8242172,False,10445,9671,11673,Baseline
+CN,152,804.6233202,False,10445,9671,11673,Baseline
+CN,158,1032.728983,False,10445,9671,11673,Baseline
+CN,160,1307.551837,False,10445,9671,11673,Baseline
+CN,162,1296.293291,False,10445,9671,11673,Baseline
+CN,163,1400.289746,False,10445,9671,11673,Baseline
+CN,164,1333.690647,False,10445,9671,11673,Baseline
+CN,167,1308.43375,False,10445,9671,11673,Baseline
+CN,170,1253.698169,False,10445,9671,11673,Baseline
+CPKC,10,98.90362094,False,11713,9189,12877,Baseline
+CPKC,12,94.02381956,False,11713,9189,12877,Baseline
+CPKC,13,143.1752969,False,11713,9189,12877,Baseline
+CPKC,20,285.2315743,False,11713,9189,12877,Baseline
+CPKC,23,415.5635579,False,11713,9189,12877,Baseline
+CPKC,28,430.2707242,False,11713,9189,12877,Baseline
+CPKC,29,430.0706945,False,11713,9189,12877,Baseline
+CPKC,40,229.3420672,False,11713,9189,12877,Baseline
+CPKC,43,164.4756649,False,11713,9189,12877,Baseline
+CPKC,49,236.4059303,False,11713,9189,12877,Baseline
+CPKC,51,164.1423741,False,11713,9189,12877,Baseline
+CPKC,53,178.1342668,False,11713,9189,12877,Baseline
+CPKC,55,90.25406361,False,11713,9189,12877,Baseline
+CPKC,57,0.8541743209,True,11713,9189,12877,Baseline
+CPKC,64,2.984100043,True,11713,9189,12877,Baseline
+CPKC,67,167.4139929,False,11713,9189,12877,Baseline
+CPKC,70,234.4048051,False,11713,9189,12877,Baseline
+CPKC,73,86.63982146,False,11713,9189,12877,Baseline
+CPKC,78,90.80804762,False,11713,9189,12877,Baseline
+CPKC,83,2.62084564,True,11713,9189,12877,Baseline
+CPKC,88,1.114451722,True,11713,9189,12877,Baseline
+CPKC,90,110.3690388,False,11713,9189,12877,Baseline
+CPKC,96,1.693932788,True,11713,9189,12877,Baseline
+CPKC,99,1.204404849,True,11713,9189,12877,Baseline
+CPKC,107,0.7764401603,True,11713,9189,12877,Baseline
+CPKC,109,1.225721252,True,11713,9189,12877,Baseline
+CPKC,118,133.3067925,False,11713,9189,12877,Baseline
+CPKC,127,4.459909456,True,11713,9189,12877,Baseline
+CPKC,131,32.30505503,False,11713,9189,12877,Baseline
+CPKC,134,101.1892234,False,11713,9189,12877,Baseline
+CPKC,141,527.4034643,False,11713,9189,12877,Baseline
+CPKC,144,322.7586564,False,11713,9189,12877,Baseline
+CPKC,152,680.8851938,False,11713,9189,12877,Baseline
+CPKC,158,851.5827546,False,11713,9189,12877,Baseline
+CPKC,160,1196.491499,False,11713,9189,12877,Baseline
+CPKC,162,1171.959484,False,11713,9189,12877,Baseline
+CPKC,163,1225.904249,False,11713,9189,12877,Baseline
+CPKC,164,1151.134778,False,11713,9189,12877,Baseline
+CPKC,167,974.4388453,False,11713,9189,12877,Baseline
+CPKC,170,923.7220023,False,11713,9189,12877,Baseline
+CSXT,10,5.422683921,True,29493,28172,32652,Baseline
+CSXT,12,0.5658790615,True,29493,28172,32652,Baseline
+CSXT,13,1.985767289,True,29493,28172,32652,Baseline
+CSXT,20,1.425392853,True,29493,28172,32652,Baseline
+CSXT,23,0.4474091957,True,29493,28172,32652,Baseline
+CSXT,28,1.222197853,True,29493,28172,32652,Baseline
+CSXT,29,1.206467306,True,29493,28172,32652,Baseline
+CSXT,40,0.2965860392,True,29493,28172,32652,Baseline
+CSXT,43,1.312522728,True,29493,28172,32652,Baseline
+CSXT,49,0.6972744586,True,29493,28172,32652,Baseline
+CSXT,51,0.6181578947,True,29493,28172,32652,Baseline
+CSXT,53,0.5712158564,True,29493,28172,32652,Baseline
+CSXT,55,0.3187648765,True,29493,28172,32652,Baseline
+CSXT,57,1.059024335,True,29493,28172,32652,Baseline
+CSXT,64,3.253728448,True,29493,28172,32652,Baseline
+CSXT,67,0.5394972946,True,29493,28172,32652,Baseline
+CSXT,70,0.8051934308,True,29493,28172,32652,Baseline
+CSXT,73,1.61853819,True,29493,28172,32652,Baseline
+CSXT,78,0.2706127231,True,29493,28172,32652,Baseline
+CSXT,83,2.611075829,True,29493,28172,32652,Baseline
+CSXT,88,277.4613722,False,29493,28172,32652,Baseline
+CSXT,90,128.4670441,False,29493,28172,32652,Baseline
+CSXT,96,2.149181335,True,29493,28172,32652,Baseline
+CSXT,99,238.0247659,False,29493,28172,32652,Baseline
+CSXT,107,330.9325708,False,29493,28172,32652,Baseline
+CSXT,109,393.3390082,False,29493,28172,32652,Baseline
+CSXT,118,354.891139,False,29493,28172,32652,Baseline
+CSXT,127,417.4834666,False,29493,28172,32652,Baseline
+CSXT,131,319.0897905,False,29493,28172,32652,Baseline
+CSXT,134,508.2621879,False,29493,28172,32652,Baseline
+CSXT,141,791.3336845,False,29493,28172,32652,Baseline
+CSXT,144,1019.445827,False,29493,28172,32652,Baseline
+CSXT,152,1154.282954,False,29493,28172,32652,Baseline
+CSXT,158,1252.20321,False,29493,28172,32652,Baseline
+CSXT,160,1577.168873,False,29493,28172,32652,Baseline
+CSXT,162,1606.53407,False,29493,28172,32652,Baseline
+CSXT,163,1731.154271,False,29493,28172,32652,Baseline
+CSXT,164,1671.526036,False,29493,28172,32652,Baseline
+CSXT,167,1701.301879,False,29493,28172,32652,Baseline
+CSXT,170,1689.707067,False,29493,28172,32652,Baseline
+NS,10,3.714546897,True,29859,29561,33147,Baseline
+NS,12,2.028961882,True,29859,29561,33147,Baseline
+NS,13,6.154880071,True,29859,29561,33147,Baseline
+NS,20,0.854586436,True,29859,29561,33147,Baseline
+NS,23,0.4430785592,True,29859,29561,33147,Baseline
+NS,28,0.3943150434,True,29859,29561,33147,Baseline
+NS,29,1.10107447,True,29859,29561,33147,Baseline
+NS,40,0.4833554612,True,29859,29561,33147,Baseline
+NS,43,0.6564143913,True,29859,29561,33147,Baseline
+NS,49,1.584567256,True,29859,29561,33147,Baseline
+NS,51,0.5737088718,True,29859,29561,33147,Baseline
+NS,53,0.4882702198,True,29859,29561,33147,Baseline
+NS,55,0.6024056234,True,29859,29561,33147,Baseline
+NS,57,1.057778477,True,29859,29561,33147,Baseline
+NS,64,1.769434759,True,29859,29561,33147,Baseline
+NS,67,34.00677414,False,29859,29561,33147,Baseline
+NS,70,1.401088735,True,29859,29561,33147,Baseline
+NS,73,0.8885571568,True,29859,29561,33147,Baseline
+NS,78,0.1701193885,True,29859,29561,33147,Baseline
+NS,83,1.445772704,True,29859,29561,33147,Baseline
+NS,88,207.4862678,False,29859,29561,33147,Baseline
+NS,90,129.4176685,False,29859,29561,33147,Baseline
+NS,96,1.813465674,True,29859,29561,33147,Baseline
+NS,99,1.408545215,True,29859,29561,33147,Baseline
+NS,107,324.2113029,False,29859,29561,33147,Baseline
+NS,109,404.5578347,False,29859,29561,33147,Baseline
+NS,118,162.1100595,False,29859,29561,33147,Baseline
+NS,127,384.9507837,False,29859,29561,33147,Baseline
+NS,131,312.5983776,False,29859,29561,33147,Baseline
+NS,134,501.7602232,False,29859,29561,33147,Baseline
+NS,141,552.6500128,False,29859,29561,33147,Baseline
+NS,144,843.2467771,False,29859,29561,33147,Baseline
+NS,152,916.3079085,False,29859,29561,33147,Baseline
+NS,158,1042.188898,False,29859,29561,33147,Baseline
+NS,160,1345.71548,False,29859,29561,33147,Baseline
+NS,162,1369.228373,False,29859,29561,33147,Baseline
+NS,163,1492.675637,False,29859,29561,33147,Baseline
+NS,164,1432.859143,False,29859,29561,33147,Baseline
+NS,167,1490.614901,False,29859,29561,33147,Baseline
+NS,170,1503.062046,False,29859,29561,33147,Baseline
+UP,10,705.0024619,False,41177,40904,46761,Baseline
+UP,12,655.3053118,False,41177,40904,46761,Baseline
+UP,13,576.9932839,False,41177,40904,46761,Baseline
+UP,20,666.6994986,False,41177,40904,46761,Baseline
+UP,23,474.527758,False,41177,40904,46761,Baseline
+UP,28,550.4420334,False,41177,40904,46761,Baseline
+UP,29,507.8704997,False,41177,40904,46761,Baseline
+UP,40,330.6218297,False,41177,40904,46761,Baseline
+UP,43,259.2112659,False,41177,40904,46761,Baseline
+UP,49,197.8916919,False,41177,40904,46761,Baseline
+UP,51,252.9294492,False,41177,40904,46761,Baseline
+UP,53,400.8218069,False,41177,40904,46761,Baseline
+UP,55,304.0954232,False,41177,40904,46761,Baseline
+UP,57,236.1866024,False,41177,40904,46761,Baseline
+UP,64,0.5487306575,True,41177,40904,46761,Baseline
+UP,67,99.3218494,False,41177,40904,46761,Baseline
+UP,70,168.5664818,False,41177,40904,46761,Baseline
+UP,73,1.633349368,True,41177,40904,46761,Baseline
+UP,78,212.4588919,False,41177,40904,46761,Baseline
+UP,83,4.53723681,True,41177,40904,46761,Baseline
+UP,88,0.1863611064,True,41177,40904,46761,Baseline
+UP,90,0.1738066785,True,41177,40904,46761,Baseline
+UP,96,0.5542946727,True,41177,40904,46761,Baseline
+UP,99,0.8219912241,True,41177,40904,46761,Baseline
+UP,107,3.013694972,True,41177,40904,46761,Baseline
+UP,109,4.222395051,True,41177,40904,46761,Baseline
+UP,118,0.3897287888,True,41177,40904,46761,Baseline
+UP,127,0.5305015711,True,41177,40904,46761,Baseline
+UP,131,0.5469624266,True,41177,40904,46761,Baseline
+UP,134,0.7328687959,True,41177,40904,46761,Baseline
+UP,141,0.9087241228,True,41177,40904,46761,Baseline
+UP,144,192.5700107,False,41177,40904,46761,Baseline
+UP,152,0.6796056797,True,41177,40904,46761,Baseline
+UP,158,0.4168293183,True,41177,40904,46761,Baseline
+UP,160,1.007562656,True,41177,40904,46761,Baseline
+UP,162,0.6590029977,True,41177,40904,46761,Baseline
+UP,163,2.452382589,True,41177,40904,46761,Baseline
+UP,164,0.5237762991,True,41177,40904,46761,Baseline
+UP,167,0.6074852865,True,41177,40904,46761,Baseline
+UP,170,2.562485965,True,41177,40904,46761,Baseline
+BNSF,10,707.4167889,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,12,660.0704762,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,13,590.4740145,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,20,631.3235577,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,23,356.5085932,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,28,344.6391836,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,29,373.8513545,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,40,137.9183281,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,43,133.1141368,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,49,247.366713,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,51,274.4449078,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,53,406.9835518,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,55,306.1574419,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,57,236.1866024,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,64,0.9001433723,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,67,152.2428758,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,70,176.1979479,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,73,1.686845451,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,78,1.62241164,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,83,6.348477318,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,88,42.43861193,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,90,23.59617555,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,96,1.813465674,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,99,0.8125272799,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,107,0.4093646911,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,109,0.8846533834,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,118,0.7301314827,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,127,1.887520217,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,131,4.123841453,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,134,9.81013004,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,141,1.106259736,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,144,0.1815702147,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,152,260.7401066,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,158,0.85832782,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,160,0.5661113045,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,162,0.4296999559,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,163,10.12041059,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,164,41.76875712,False,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,167,0.6000619558,True,29372,26454,33769,"Owner only, tighter snap and distance"
+BNSF,170,0.653187715,True,29372,26454,33769,"Owner only, tighter snap and distance"
+CN,10,294.326447,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,12,244.9347808,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,13,182.0218434,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,20,314.937631,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,23,370.069512,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,28,419.4930836,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,29,380.8377478,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,40,298.3272299,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,43,222.5402162,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,49,187.1749212,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,51,122.5400305,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,53,11.17672085,True,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,55,66.24547757,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,57,0.8541743209,True,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,64,1.340958478,True,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,67,109.179631,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,70,139.8943339,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,73,0.5609071804,True,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,78,192.5977942,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,83,4.193154118,True,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,88,190.0170907,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,90,115.4374625,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,96,1.940640818,True,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,99,164.6068969,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,107,20.78735726,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,109,2.723201226,True,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,118,1.303927639,True,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,127,359.4592568,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,131,254.220758,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,134,442.5707316,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,141,484.4648051,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,144,640.8242172,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,152,804.6233202,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,158,1032.728983,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,160,1307.551837,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,162,1296.293291,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,163,1400.289746,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,164,1333.690647,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,167,1308.43375,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CN,170,1253.698169,False,8854,6684,9919,"Owner only, tighter snap and distance"
+CPKC,10,98.90362094,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,12,94.02381956,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,13,143.1752969,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,20,285.2315743,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,23,415.5635579,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,28,430.2707242,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,29,430.0706945,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,40,229.3420672,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,43,164.4756649,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,49,236.4059303,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,51,164.1423741,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,53,178.1342668,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,55,90.25406361,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,57,0.8541743209,True,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,64,2.984100043,True,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,67,167.4139929,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,70,234.4048051,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,73,86.63982146,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,78,90.80804762,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,83,2.62084564,True,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,88,1.114451722,True,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,90,110.3690388,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,96,1.693932788,True,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,99,1.204404849,True,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,107,0.7764401603,True,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,109,1.225721252,True,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,118,133.3067925,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,127,4.459909456,True,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,131,32.30505503,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,134,101.1892234,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,141,527.4034643,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,144,322.7586564,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,152,680.8851938,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,158,851.5827546,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,160,1196.491499,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,162,1171.959484,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,163,1225.904249,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,164,1151.134778,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,167,974.4388453,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CPKC,170,923.7220023,False,6942,2692,7665,"Owner only, tighter snap and distance"
+CSXT,10,5.422683921,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,12,0.5658790615,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,13,1.985767289,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,20,1.425392853,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,23,0.4474091957,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,28,1.222197853,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,29,1.206467306,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,40,0.2965860392,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,43,1.312522728,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,49,0.6972744586,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,51,0.6181578947,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,53,0.5712158564,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,55,0.3187648765,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,57,1.059024335,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,64,3.253728448,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,67,0.5394972946,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,70,0.8051934308,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,73,1.61853819,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,78,0.2706127231,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,83,2.611075829,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,88,277.4613722,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,90,128.4670441,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,96,2.149181335,True,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,99,238.0247659,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,107,330.9325708,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,109,393.3390082,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,118,354.891139,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,127,417.4834666,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,131,319.0897905,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,134,508.2621879,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,141,791.3336845,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,144,1019.445827,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,152,1154.282954,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,158,1252.20321,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,160,1577.168873,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,162,1606.53407,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,163,1731.154271,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,164,1671.526036,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,167,1701.301879,False,24713,22409,27306,"Owner only, tighter snap and distance"
+CSXT,170,1689.707067,False,24713,22409,27306,"Owner only, tighter snap and distance"
+NS,10,3.714546897,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,12,2.028961882,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,13,6.154880071,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,20,0.854586436,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,23,0.4430785592,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,28,0.3943150434,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,29,1.10107447,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,40,0.4833554612,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,43,0.6564143913,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,49,1.584567256,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,51,0.5737088718,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,53,0.4882702198,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,55,0.6024056234,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,57,1.057778477,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,64,1.769434759,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,67,34.00677414,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,70,1.401088735,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,73,0.8885571568,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,78,0.1701193885,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,83,1.445772704,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,88,207.4862678,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,90,129.4176685,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,96,1.813465674,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,99,1.408545215,True,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,107,324.2113029,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,109,404.5578347,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,118,162.1100595,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,127,384.9507837,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,131,312.5983776,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,134,501.7602232,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,141,552.6500128,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,144,843.2467771,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,152,916.3079085,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,158,1042.188898,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,160,1345.71548,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,162,1369.228373,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,163,1492.675637,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,164,1432.859143,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,167,1490.614901,False,24348,22587,27133,"Owner only, tighter snap and distance"
+NS,170,1503.062046,False,24348,22587,27133,"Owner only, tighter snap and distance"
+UP,10,705.0024619,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,12,655.3053118,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,13,576.9932839,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,20,666.6994986,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,23,474.527758,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,28,550.4420334,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,29,507.8704997,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,40,330.6218297,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,43,259.2112659,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,49,197.8916919,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,51,252.9294492,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,53,400.8218069,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,55,304.0954232,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,57,236.1866024,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,64,0.5487306575,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,67,99.3218494,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,70,168.5664818,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,73,1.633349368,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,78,212.4588919,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,83,4.53723681,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,88,0.1863611064,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,90,0.1738066785,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,96,0.5542946727,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,99,0.8219912241,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,107,3.013694972,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,109,4.222395051,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,118,0.3897287888,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,127,0.5305015711,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,131,0.5469624266,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,134,0.7328687959,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,141,0.9087241228,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,144,192.5700107,False,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,152,0.6796056797,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,158,0.4168293183,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,160,1.007562656,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,162,0.6590029977,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,163,2.452382589,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,164,0.5237762991,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,167,0.6074852865,True,35887,31921,40948,"Owner only, tighter snap and distance"
+UP,170,2.562485965,True,35887,31921,40948,"Owner only, tighter snap and distance"

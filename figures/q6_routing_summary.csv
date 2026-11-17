@@ -1,0 +1,37 @@
+Network scenario,Denominator,Classification,Sample records,Denominator records,Record share,Weighted waybill share,Weighted_waybills,Weighted_tons,Weighted_ton_miles,Weighted_revenue
+Baseline,All Q5 baseline,Matched: conservative UP–NS,39,1130209,3.450689209e-05,1.206115508e-05,195,15110,16215950,3578800
+Baseline,All Q5 baseline,Matched: other carrier pairs only,5111,1130209,0.004522172448,0.003358797889,54303.72,3106876.02,2772673875,261890287.7
+Baseline,All Q5 baseline,Matched: possible UP–NS,12227,1130209,0.01081835307,0.01121393996,181302.56,5782628.28,9762402766,946248109.2
+Baseline,All Q5 baseline,Matched: reported single-line,250296,1130209,0.2214599247,0.3682266898,5953343.94,191756792.2,2.130561128e+11,1.483356636e+10
+Baseline,All Q5 baseline,Unmatched: multiple reported interchanges,1298,1130209,0.001148460152,0.0003926543055,6348.28,1792613.67,2508451118,137948323.5
+Baseline,All Q5 baseline,Unmatched: no compatible path,5918,1130209,0.005236199676,0.009350612114,151177.01,3667401.63,4492225294,433336138.9
+Baseline,All Q5 baseline,Unmatched: same BEA,175866,1130209,0.1556048483,0.1120216568,1811121.98,189567869.7,7.055932652e+10,7297175449
+Baseline,All Q5 baseline,Unmatched: unmodeled BEA,679454,1130209,0.6011755348,0.495423588,8009813.24,869325082,7.274239429e+11,4.404884249e+10
+Baseline,Reported interline,Matched: conservative UP–NS,39,209741,0.0001859436162,9.919687413e-05,195,15110,16215950,3578800
+Baseline,Reported interline,Matched: other carrier pairs only,5111,209741,0.02436814929,0.02762440655,54303.72,3106876.02,2772673875,261890287.7
+Baseline,Reported interline,Matched: possible UP–NS,12227,209741,0.05829570756,0.09222896012,181302.56,5782628.28,9762402766,946248109.2
+Baseline,Reported interline,Unmatched: multiple reported interchanges,1298,209741,0.006188584969,0.003229382216,6348.28,1792613.67,2508451118,137948323.5
+Baseline,Reported interline,Unmatched: no compatible path,1700,209741,0.008105234551,0.01283497163,25230.83,755448.17,316774301.5,118756547.4
+Baseline,Reported interline,Unmatched: same BEA,29282,209741,0.1396102813,0.1346914335,264774.77,18615670.67,1.901685681e+10,1893092357
+Baseline,Reported interline,Unmatched: unmodeled BEA,160084,209741,0.7632460988,0.7292916491,1433632.59,134353238.5,1.553885604e+11,1.087435261e+10
+Baseline,Matched interline,Matched: conservative UP–NS,39,17377,0.002244345975,0.0008269675211,195,15110,16215950,3578800
+Baseline,Matched interline,Matched: other carrier pairs only,5111,17377,0.2941244173,0.2302944242,54303.72,3106876.02,2772673875,261890287.7
+Baseline,Matched interline,Matched: possible UP–NS,12227,17377,0.7036312367,0.7688786083,181302.56,5782628.28,9762402766,946248109.2
+"Owner only, tighter snap and distance",All Q5 baseline,Matched: conservative UP–NS,272,1130209,0.0002406634525,0.0004522221857,7311.35,131635.56,247512366.1,22216444.88
+"Owner only, tighter snap and distance",All Q5 baseline,Matched: other carrier pairs only,9425,1130209,0.008339165588,0.007136159919,115374.62,4870180.54,5606491560,561907717.1
+"Owner only, tighter snap and distance",All Q5 baseline,Matched: possible UP–NS,962,1130209,0.0008511700048,0.0005624704209,9093.8,549985.97,984372401,55494666.98
+"Owner only, tighter snap and distance",All Q5 baseline,Matched: reported single-line,162966,1130209,0.1441910302,0.2758265426,4459454.79,137460302.2,1.430994713e+11,1.02083766e+10
+"Owner only, tighter snap and distance",All Q5 baseline,Unmatched: multiple reported interchanges,1298,1130209,0.001148460152,0.0003926543055,6348.28,1792613.67,2508451118,137948323.5
+"Owner only, tighter snap and distance",All Q5 baseline,Unmatched: no compatible path,99966,1130209,0.08844912755,0.1081847058,1749087.67,61316703.95,8.0161783e+10,5630624273
+"Owner only, tighter snap and distance",All Q5 baseline,Unmatched: same BEA,175866,1130209,0.1556048483,0.1120216568,1811121.98,189567869.7,7.055932652e+10,7297175449
+"Owner only, tighter snap and distance",All Q5 baseline,Unmatched: unmodeled BEA,679454,1130209,0.6011755348,0.495423588,8009813.24,869325082,7.274239429e+11,4.404884249e+10
+"Owner only, tighter snap and distance",Reported interline,Matched: conservative UP–NS,272,209741,0.001296837528,0.003719297773,7311.35,131635.56,247512366.1,22216444.88
+"Owner only, tighter snap and distance",Reported interline,Matched: other carrier pairs only,9425,209741,0.04493637391,0.05869129055,115374.62,4870180.54,5606491560,561907717.1
+"Owner only, tighter snap and distance",Reported interline,Matched: possible UP–NS,962,209741,0.004586609199,0.004626033507,9093.8,549985.97,984372401,55494666.98
+"Owner only, tighter snap and distance",Reported interline,Unmatched: multiple reported interchanges,1298,209741,0.006188584969,0.003229382216,6348.28,1792613.67,2508451118,137948323.5
+"Owner only, tighter snap and distance",Reported interline,Unmatched: no compatible path,8418,209741,0.04013521438,0.06575091334,129252.34,4108260.4,6029690565,690854915.3
+"Owner only, tighter snap and distance",Reported interline,Unmatched: same BEA,29282,209741,0.1396102813,0.1346914335,264774.77,18615670.67,1.901685681e+10,1893092357
+"Owner only, tighter snap and distance",Reported interline,Unmatched: unmodeled BEA,160084,209741,0.7632460988,0.7292916491,1433632.59,134353238.5,1.553885604e+11,1.087435261e+10
+"Owner only, tighter snap and distance",Matched interline,Matched: conservative UP–NS,272,10659,0.02551834131,0.05548158113,7311.35,131635.56,247512366.1,22216444.88
+"Owner only, tighter snap and distance",Matched interline,Matched: other carrier pairs only,9425,10659,0.8842292898,0.8755108618,115374.62,4870180.54,5606491560,561907717.1
+"Owner only, tighter snap and distance",Matched interline,Matched: possible UP–NS,962,10659,0.09025236889,0.06900755708,9093.8,549985.97,984372401,55494666.98
