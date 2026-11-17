@@ -1,0 +1,13 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
