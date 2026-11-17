@@ -60,3 +60,22 @@ python scripts/q3_regression.py --scale-output figures/q4_economies_scale.csv
 The script uses the same pooled OLS fit for both questions. When ton-miles and network miles increase by the same percentage, traffic per network mile stays constant. Holding input prices fixed, the predicted percentage change in total cost per 1% expansion is the sum of the two coefficients, 0.744982 + 0.196552 = 0.941534. Total cost grows less than proportionally, so average cost per ton-mile falls by about 0.0585% for a 1% expansion.
 
 The lower-tail test evaluates the null that the sum is at least one, using one as the null boundary. The standard error is the square root of the two coefficient variances plus twice their covariance. The covariance is −0.01120146 and the sum's standard error is 0.02812141. The test gives t(29) = −2.07907 and a one-sided p-value of 0.02328. The model supports economies of scale at the 5% level.
+
+## Question 5 · Revenue per ton-mile and interchange
+
+Use the Python 3.12 environment and pinned requirements from Question 3. Place the official [2024 STB Public Use Waybill Sample](https://www.stb.gov/reports-data/waybill/) ZIP at a local path outside the checkout. Run from the repository root:
+
+```bash
+unzip -t /path/to/PublicUseWaybillSample2024.zip
+OPENBLAS_NUM_THREADS=1 python scripts/q5_waybill_regression.py /path/to/PublicUseWaybillSample2024.zip
+```
+
+The ZIP used here has SHA-256 `244e9dcb1430d9a40ff57b94b3ab472a806ec0d4225473859f75fa7709cc2249`. The script reads `PublicUseWaybillSample2024.txt` from the ZIP, temporarily writing about 540 MB to the system temporary directory. It verifies 247-byte records followed by CRLF and 2024 accounting periods. The results are `figures/q5_waybill_regression_table.csv` and `figures/q5_waybill_sample_cleaning.csv`. Use `--output-dir` to write a comparison run elsewhere.
+
+The 2024 Reference Guide's Tables 4-6 and 4-7 define the inputs. Revenue per ton-mile is unexpanded line-haul freight revenue (field 16) divided by billed tons (field 14) times estimated short-line miles (field 26), with both quantities in the denominator. The regression uses log revenue per ton-mile, a positive reported interchange count indicator (field 31), log short-line distance, log tons, and categorical published STCC (field 13). The shortest-distance measure is rounded and can differ from miles traveled. The public record layout omits a calculated-rate flag, so contract revenue masking cannot be identified or reversed from these files.
+
+The cleaning table counts exclusions sequentially and reports additional sensitivity filters relative to the baseline. Of 2,166,913 records, 25,856 were excluded for zero distance, then 74,841 for zero billed tons. The 2,066,216 remaining records form the all-valid sensitivity sample. The Rebill Code 0 restriction (field 25) excludes another 936,007 records, leaving 1,130,209. The baseline excludes Rule 11 rebills because those records can describe only the part of a shipment covered by the reported bill. In the all-valid fit, the interchange indicator refers to the reported movement.
+
+The script uses statsmodels OLS after removing commodity means, which yields the same slope estimates as an intercept and STCC indicator variables. Conventional standard errors use the full model's residual degrees of freedom. HC3 uses full-model leverage, including the commodity indicators. Singleton commodities contribute no slope information and have zero contribution to slope covariance. Both confidence intervals use the full model's residual degrees of freedom. The table reports full-model R-squared, and a displayed zero p-value indicates numerical underflow. Additional fits check two-digit STCC, exact expansion-factor weights (field 29, scaled by 100 to restore its implied decimal), and actual tons (field 15) with a same-row billed-tons comparison. Weighted inference is a sensitivity check.
+
+Holding shipment size, short-line distance, and commodity fixed, the baseline interline coefficient of 0.248674 corresponds to 28.23% higher modeled revenue per ton-mile using the single-line movement as the reference. The all-valid coefficient of 0.142730 corresponds to 15.34% higher. From the interline baseline, the corresponding single-line comparisons are 22.02% and 13.30% lower. These are conditional revenue comparisons. Carrier operating costs, route selection, and market power can also affect how an observed premium should be interpreted.

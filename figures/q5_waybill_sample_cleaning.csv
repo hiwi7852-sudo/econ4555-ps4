@@ -1,0 +1,12 @@
+Step,Entering,Excluded at step,Retained
+Raw records (verified 247 bytes),2166913,0,2166913
+Published STCC is five digits and nonzero,2166913,0,2166913
+Valid number of interchanges (0–9),2166913,0,2166913
+Routing flag T,2166913,0,2166913
+Positive line-haul revenue,2166913,0,2166913
+Positive estimated short-line miles,2166913,25856,2141057
+Positive billed tons,2141057,74841,2066216
+All otherwise valid records,2066216,0,2066216
+Baseline restriction: Rebill Code 0,2066216,936007,1130209
+Baseline sensitivity: positive exact weight,1130209,0,1130209
+Baseline sensitivity: positive actual tons,1130209,205041,925168
