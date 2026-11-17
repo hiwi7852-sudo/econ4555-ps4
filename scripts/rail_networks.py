@@ -45,19 +45,21 @@ def read_states(path):
     )].to_crs(CRS)
 
 
-def read_routes(path, mask):
+def read_routes(path):
     source = f"zip://{path.resolve()}" if path.suffix.lower() == ".zip" else path
-    lines = gpd.read_file(source)
+    lines = gpd.read_file(source, where="COUNTRY = 'US' AND STATEAB NOT IN ('AK', 'HI')")
     owners = [c for c in lines if re.fullmatch(r"RROWNER\d+", c, re.I)]
     rights = [c for c in lines if re.fullmatch(r"TRKRGHTS?\d+", c, re.I)]
     if not owners or not rights or lines.crs is None:
         raise ValueError("Use a NARN Lines export containing owner and trackage-rights fields and a CRS.")
+    print(f"Ownership fields: {', '.join(owners)}")
+    print(f"Trackage-rights fields: {', '.join(rights)}")
     fields = lines[owners + rights].apply(lambda col: col.astype("string").str.strip().str.upper())
     matches = {code: fields.eq(code).any(axis=1) for code in COLORS}
     for code in COLORS:
         print(
             f"{code}: {fields[owners].eq(code).any(axis=1).sum():,} owner records, "
-            f"{fields[rights].eq(code).any(axis=1).sum():,} rights records in source."
+            f"{fields[rights].eq(code).any(axis=1).sum():,} rights records in the contiguous U.S."
         )
     lines = lines.loc[matches["UP"] | matches["NS"], ["geometry"]].copy()
     for code, found in matches.items():
@@ -65,13 +67,12 @@ def read_routes(path, mask):
     lines = lines.loc[lines.geom_type.isin(["LineString", "MultiLineString"])].to_crs(CRS)
     lines = lines.loc[lines.geometry.notna() & ~lines.geometry.is_empty]
     lines = lines.set_geometry(lines.geometry.make_valid())
-    lines = gpd.clip(lines, mask, keep_geom_type=True)
     for code in COLORS:
         count = int(lines[code].sum())
         if count == 0:
             raise ValueError(f"No {code} segments with valid geometry inside the map footprint.")
-        print(f"{code}: {count:,} source records intersect the map footprint.")
-    print(f"Shared: {(lines['UP'] & lines['NS']).sum():,} records in map footprint.")
+        print(f"{code}: {count:,} mapped source records.")
+    print(f"Shared: {(lines['UP'] & lines['NS']).sum():,} mapped records.")
     return lines
 
 
@@ -128,7 +129,7 @@ def main():
     parser.add_argument("--output", type=Path, default=ROOT / "figures" / "rail_networks.png")
     args = parser.parse_args()
     states = read_states(args.boundaries)
-    draw_map(states, read_routes(args.rail_lines, states.geometry.union_all()), args.output)
+    draw_map(states, read_routes(args.rail_lines), args.output)
 
 
 if __name__ == "__main__":
