@@ -31,3 +31,20 @@ The plotting code matches the exact carrier codes `UP` and `NS` in NARN fields `
 UP's western network and NS's eastern network meet at gateways including Chicago, Kansas City, St. Louis, Memphis, and New Orleans. Combining those networks could expand the number of origin–destination pairs served by a single carrier. Where traffic can be pooled on common corridors, longer trains or fuller departures could spread fixed train and terminal costs over more shipments.
 
 For eligible shipments that currently move UP–NS, single-carrier routing could eliminate a handoff between companies. That could reduce coordination, billing, and scheduling costs, as well as delays from missed connections. Physical switching and classification may still be needed. The map shows where those mechanisms could apply. Estimating savings would require shipment volumes, routing, and terminal dwell data.
+
+## Question 3 · Economies of density
+
+From the repository root, create a Python 3.12 environment and run the regression:
+
+```bash
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python scripts/q3_regression.py
+```
+
+The script reads the supplied `data/RR1.csv` and regenerates `figures/q3_regression_table.csv`. The CSV contains 34 railroad-year observations, 11 distinct railroad labels, and 15 columns. The identifiers are `year`, `rr`, and `rr_id`. The operating measures are tons, ton-miles, total costs, network size, diesel price, and wages, with corresponding `l_` natural-log columns. There are no missing entries or duplicate railroad-year pairs.
+
+The regression uses the supplied log columns directly and pools the 1998–2001 observations. It includes an intercept and uses conventional OLS standard errors, with no railroad or year fixed effects. The coefficient rows report two-sided p-values for tests against zero. The separate density-test row reports the lower-tail t-test of the ton-mile elasticity against one, using 29 residual degrees of freedom.
+
+The estimated ton-mile elasticity is 0.745. Holding network size, diesel price, and wages fixed, 1% more ton-miles is associated with about 0.745% higher total cost and about 0.255% lower cost per ton-mile. The one-sided p-value of 0.0112 supports economies of density at the 5% level under the conventional OLS assumptions.
