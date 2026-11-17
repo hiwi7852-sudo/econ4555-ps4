@@ -18,6 +18,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data", type=Path, default=ROOT / "data" / "RR1.csv")
     parser.add_argument("--output", type=Path, default=ROOT / "figures" / "q3_regression_table.csv")
+    parser.add_argument("--scale-output", type=Path, help="Write the Question 4 scale test to this CSV.")
     args = parser.parse_args()
 
     data = pd.read_csv(args.data)
@@ -61,6 +62,35 @@ def main():
     table.to_csv(args.output, index=False, float_format="%.10g")
     print(table.to_string(index=False, na_rep="", float_format=lambda x: f"{x:.8g}"))
     print(f"Saved {args.output}")
+    if args.scale_output is not None:
+        write_scale_results(fit, args.scale_output)
+
+
+def write_scale_results(fit, output):
+    terms = ["l_tonmiles", "l_netsize"]
+    beta1, beta2 = fit.params.loc[terms]
+    covariance = fit.cov_params().loc[terms, terms]
+    weights = np.ones(len(terms))
+    cost_elasticity = beta1 + beta2
+    standard_error = np.sqrt(weights @ covariance.to_numpy() @ weights)
+    statistic = (cost_elasticity - 1) / standard_error
+    p_value = t.cdf(statistic, df=fit.df_resid)
+    results = pd.DataFrame([{
+        "Ton-mile coefficient": beta1,
+        "Network-size coefficient": beta2,
+        "Coefficient sum": cost_elasticity,
+        "Coefficient covariance": covariance.iloc[0, 1],
+        "Standard error of sum": standard_error,
+        "Null boundary": 1,
+        "t-statistic": statistic,
+        "Residual degrees of freedom": int(fit.df_resid),
+        "One-sided p-value": p_value,
+        "Reject at 5%": p_value < 0.05,
+    }])
+    output.parent.mkdir(parents=True, exist_ok=True)
+    results.to_csv(output, index=False, float_format="%.10g")
+    print(results.to_string(index=False))
+    print(f"Saved {output}")
 
 
 if __name__ == "__main__":

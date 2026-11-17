@@ -48,3 +48,15 @@ The script reads the supplied `data/RR1.csv` and regenerates `figures/q3_regress
 The regression uses the supplied log columns directly and pools the 1998–2001 observations. It includes an intercept and uses conventional OLS standard errors, with no railroad or year fixed effects. The coefficient rows report two-sided p-values for tests against zero. The separate density-test row reports the lower-tail t-test of the ton-mile elasticity against one, using 29 residual degrees of freedom.
 
 The estimated ton-mile elasticity is 0.745. Holding network size, diesel price, and wages fixed, 1% more ton-miles is associated with about 0.745% higher total cost and about 0.255% lower cost per ton-mile. The one-sided p-value of 0.0112 supports economies of density at the 5% level under the conventional OLS assumptions.
+
+## Question 4 · Economies of scale
+
+Use the Python environment from Question 3 and run this command from the repository root:
+
+```bash
+python scripts/q3_regression.py --scale-output figures/q4_economies_scale.csv
+```
+
+The script uses the same pooled OLS fit for both questions. When ton-miles and network miles increase by the same percentage, traffic per network mile stays constant. Holding input prices fixed, the predicted percentage change in total cost per 1% expansion is the sum of the two coefficients, 0.744982 + 0.196552 = 0.941534. Total cost grows less than proportionally, so average cost per ton-mile falls by about 0.0585% for a 1% expansion.
+
+The lower-tail test evaluates the null that the sum is at least one, using one as the null boundary. The standard error is the square root of the two coefficient variances plus twice their covariance. The covariance is −0.01120146 and the sum's standard error is 0.02812141. The test gives t(29) = −2.07907 and a one-sided p-value of 0.02328. The model supports economies of scale at the 5% level.
